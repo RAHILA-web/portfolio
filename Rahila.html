@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahila Parveen A – Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, black, gold);
+            padding: 50px 20px;
+            border-bottom: 5px solid gold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            border: 3px solid gold;
+            box-shadow: 0 0 15px gold;
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: black;
+            padding: 10px 0;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: gold;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            text-shadow: 0 0 10px gold;
+        }
+
+        .section-content {
+            background: rgba(255, 215, 0, 0.1);
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .download-button {
+            background: gold;
+            color: black;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .download-button:hover {
+            background: black;
+            color: gold;
+            box-shadow: 0 0 15px gold;
+        }
+
+        .projects ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects ul li {
+            background: rgba(255, 215, 0, 0.2);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .projects ul li:hover {
+            transform: scale(1.05);
+        }
+
+        .projects ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects ul li a:hover {
+            text-shadow: 0 0 10px gold;
+        }
+
+        footer {
+            background: black;
+            padding: 15px;
+            color: gold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Rahila Parveen A</h1>
+        <p>WEB DEVELOPER</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="section-content">
+        <h2>About Me</h2>
+        <p>BSc Computer Science with AI student, passionate about AI, machine learning, and software development. Skilled in Python, data analysis, and problem-solving, eager to build innovative AI solutions. 🚀</p>
+    </section>
+    <section id="education" class="section-content">
+        <h2>Education</h2>
+        <p>B.Sc. Computer Science with AI, University of Madras</p>
+    </section>
+    <section id="skills" class="section-content">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>Data Structures</li>
+            <li>Canva</li>
+        </ul>
+    </section>
+    <section id="projects" class="section-content projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">Cyber Detox</a> - A web application designed to help users take a break from digital distractions.</li>
+            <li><a href="#">Cloud Security (IBM)</a> - Built a secure cloud storage system ensuring encrypted data transfers and protection against cyber threats.</li>
+            <li><a href="#">AI Chatbot (IBM)</a> -  Developed a chatbot using AI and NLP to provide instant customer support and automated responses.</li>
+        </ul>
+    </section>
+    <section id="resume" class="section-content">
+        <h2>Resume</h2>
+        <a href="Rahila_RESUME.pdf" target="_blank" class="download-button">Download CV</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Rahila Parveen A</p>
+    </footer>
+</body>
+</html>
